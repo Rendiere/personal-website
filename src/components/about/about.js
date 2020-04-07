@@ -3,65 +3,100 @@ import React, { Component } from "react";
 export default class About extends Component {
   render() {
     return (
-    <div>
+      <div>
         <section className="colorlib-about" data-section="about">
-            <div className="colorlib-narrow-content">
+          <div className="colorlib-narrow-content">
+            <div className="row">
+              <div className="col-md-12">
+                <div
+                  className="row row-bottom-padded-sm animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div className="col-md-12">
+                    <div className="about-desc">
+                      <span className="heading-meta">About Me</span>
+                      <h2 className="colorlib-heading">Who Am I?</h2>
+                      <p>
+                        My background is in Engineering, but apparantly Data
+                        Scientists are the{" "}
+                        <a
+                          href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century"
+                          target="_blank"
+                        >
+                          sexiest thing since sliced lists
+                        </a>
+                        , so I'm a happy convert.
+                        <br />I enjoy keeping things balanced, which for me
+                        means yoga and{" "}
+                        <a
+                          href="https://soundcloud.com/renthefox"
+                          target="_blank"
+                        >
+                          DJing
+                        </a>{" "}
+                        as much as geeking out on data science.
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 <div className="row">
-                <div className="col-md-12">
-                    <div className="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                    <div className="col-md-12">
-                        <div className="about-desc">
-                        <span className="heading-meta">About Me</span>
-                        <h2 className="colorlib-heading">Who Am I?</h2>
-                        <p>Hi I'm <strong>Renier Botha</strong> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                        </div>
+                  <div
+                    className="col-md-3 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div className="services color-1">
+                      <span className="icon2">
+                        <i className="icon-bulb" />
+                      </span>
+                      <h3>Electronics Engineer</h3>
                     </div>
+                  </div>
+                  <div
+                    className="col-md-3 animate-box"
+                    data-animate-effect="fadeInRight"
+                  >
+                    <div className="services color-2">
+                      <span className="icon2">
+                        <i className="icon-globe-outline" />
+                      </span>
+                      <h3>Data Scientist</h3>
                     </div>
-                    <div className="row">
-                    <div className="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-                        <div className="services color-1">
-                        <span className="icon2"><i className="icon-bulb" /></span>
-                        <h3>Graphic Design</h3>
-                        </div>
+                  </div>
+                  <div
+                    className="col-md-3 animate-box"
+                    data-animate-effect="fadeInTop"
+                  >
+                    <div className="services color-3">
+                      <span className="icon2">
+                        <i className="icon-data" />
+                      </span>
+                      <h3>DJ</h3>
                     </div>
-                    <div className="col-md-3 animate-box" data-animate-effect="fadeInRight">
-                        <div className="services color-2">
-                        <span className="icon2"><i className="icon-globe-outline" /></span>
-                        <h3>Web Design</h3>
-                        </div>
-                    </div>
-                    <div className="col-md-3 animate-box" data-animate-effect="fadeInTop">
-                        <div className="services color-3">
-                        <span className="icon2"><i className="icon-data" /></span>
-                        <h3>Software</h3>
-                        </div>
-                    </div>
-                    <div className="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-                        <div className="services color-4">
-                        <span className="icon2"><i className="icon-phone3" /></span>
-                        <h3>Application</h3>
-                        </div>
-                    </div>
-                    </div>
-                    <div className="row">
-                    <div className="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                        <div className="hire">
-                        <h2>
-                            Looking for a Data Science consult?
-                            <br/>
-                            If you're reading this, then I've recently completed a project and I'm available again. 
-                        </h2>
-                        <a href="#contact" className="btn-hire">Hire me</a>
-                        </div>
-                    </div>
-                    </div>
+                  </div>
                 </div>
+                <div className="row">
+                  <div
+                    className="col-md-12 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div className="hire">
+                      <h2>
+                        Looking for a Data Science consultant?
+                        <br />
+                        If you're reading this, then I've recently completed a
+                        project and I'm available again.
+                      </h2>
+                      <a href="#contact" className="btn-hire">
+                        Hire me
+                      </a>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </section>
-
-    </div>
+      </div>
     );
   }
 }

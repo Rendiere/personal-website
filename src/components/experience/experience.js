@@ -55,7 +55,7 @@ export default class Experience extends Component {
       {
         title: "Data Scientist",
         dates: {
-          start: "Dec. 2018",
+          start: "Dec. 2017",
           end: "July 2018"
         },
         company: "Black Swan",
@@ -86,14 +86,16 @@ export default class Experience extends Component {
       }
     ];
 
-    const work_experience = Object.entries(experience_data).map((value, index) => {
-      const i = value[0]
-      return <ExperienceSection data={value[1]} i={i}></ExperienceSection>;
-    });
+    const work_experience = Object.entries(experience_data).map(
+      (value, index) => {
+        const i = value[0];
+        return <ExperienceSection data={value[1]} i={i}></ExperienceSection>;
+      }
+    );
 
     return (
       <div>
-        <Skills></Skills>
+        {/* <Skills></Skills> */}
         <section className="colorlib-experience" data-section="experience">
           <div className="colorlib-narrow-content">
             <div className="row">

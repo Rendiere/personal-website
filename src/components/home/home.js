@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import ParticlesBg from "particles-bg";
+
 export default class Home extends Component {
   render() {
     return (
@@ -10,10 +12,10 @@ export default class Home extends Component {
           data-section="home"
         >
           <div className="flexslider js-fullheight">
+            <ParticlesBg color="#ff0000" num={20} type="cobweb" bg={true} />
             <ul className="slides">
               <li>
                 {" "}
-                {/*<TODO: Add background image here>*/}
                 <div className="overlay" />
                 <div className="container-fluid">
                   <div className="row">
@@ -33,7 +35,6 @@ export default class Home extends Component {
               </li>
               <li>
                 {" "}
-                {/*<TODO: Add background image here>*/}
                 <div className="overlay" />
                 <div className="container-fluid">
                   <div className="row">
@@ -63,7 +64,6 @@ export default class Home extends Component {
               </li>
               <li>
                 {" "}
-                {/*<TODO: Add background image here>*/}
                 <div className="overlay" />
                 <div className="container-fluid">
                   <div className="row">
