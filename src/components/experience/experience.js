@@ -15,7 +15,7 @@ export default class Experience extends Component {
 
     return (
       <div>
-        {/* <Skills></Skills> */}
+        <Skills></Skills>
         <section className="colorlib-experience" data-section="experience">
           <div className="colorlib-narrow-content">
             <div className="row">

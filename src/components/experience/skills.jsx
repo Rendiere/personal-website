@@ -2,6 +2,64 @@ import React, { Component } from "react";
 
 export default class Skills extends Component {
   render() {
+    const skills = [
+      {
+        name: "Python",
+        level: 75,
+        color: "color-1",
+      },
+      {
+        name: "Javascript",
+        level: 60,
+        color: "color-3",
+      },
+      {
+        name: "SQL",
+        level: 50,
+        color: "color-2",
+      },
+      {
+        name: "Pandas",
+        level: 90,
+        color: "color-4",
+      },
+      {
+        name: "Machine Learning",
+        level: 85,
+        color: "color-6",
+      },
+      {
+        name: "Communication & Presentation",
+        level: 90,
+        color: "color-7",
+      },
+    ];
+
+    const skillsItems = Object.entries(skills).map((value, index) => {
+      const i = value[0];
+      const data = value[1];
+
+      return (
+        <div className="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+          <div className="progress-wrap">
+            <h3>{data.name}</h3>
+            <div className="progress">
+              <div
+                className={"progress-bar " + data.color}
+                role="progressbar"
+                aria-valuenow={data.level}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                style={{ width: data.level + "%" }}
+              >
+                <span>{data.level}%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    });
+
     return (
       <div>
         <section className="colorlib-skills" data-section="skills">
@@ -11,7 +69,7 @@ export default class Skills extends Component {
                 className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
                 data-animate-effect="fadeInLeft"
               >
-                <span className="heading-meta">My Specialty</span>
+                <span className="heading-meta">Technical Expertise</span>
                 <h2 className="colorlib-heading animate-box">My Skills</h2>
               </div>
             </div>
@@ -20,130 +78,9 @@ export default class Skills extends Component {
                 className="col-md-12 animate-box"
                 data-animate-effect="fadeInLeft"
               >
-                <p>
-                  
-                </p>
+                <p></p>
               </div>
-              <div
-                className="col-md-6 animate-box"
-                data-animate-effect="fadeInLeft"
-              >
-                <div className="progress-wrap">
-                  <h3>Photoshop</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar color-1"
-                      role="progressbar"
-                      aria-valuenow={75}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                      style={{ width: "75%" }}
-                    >
-                      <span>75%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-md-6 animate-box"
-                data-animate-effect="fadeInRight"
-              >
-                <div className="progress-wrap">
-                  <h3>jQuery</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar color-2"
-                      role="progressbar"
-                      aria-valuenow={60}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                      style={{ width: "60%" }}
-                    >
-                      <span>60%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-md-6 animate-box"
-                data-animate-effect="fadeInLeft"
-              >
-                <div className="progress-wrap">
-                  <h3>HTML5</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar color-3"
-                      role="progressbar"
-                      aria-valuenow={85}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                      style={{ width: "85%" }}
-                    >
-                      <span>85%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-md-6 animate-box"
-                data-animate-effect="fadeInRight"
-              >
-                <div className="progress-wrap">
-                  <h3>CSS3</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar color-4"
-                      role="progressbar"
-                      aria-valuenow={90}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                      style={{ width: "90%" }}
-                    >
-                      <span>90%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-md-6 animate-box"
-                data-animate-effect="fadeInLeft"
-              >
-                <div className="progress-wrap">
-                  <h3>WordPress</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar color-5"
-                      role="progressbar"
-                      aria-valuenow={70}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                      style={{ width: "70%" }}
-                    >
-                      <span>70%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-md-6 animate-box"
-                data-animate-effect="fadeInRight"
-              >
-                <div className="progress-wrap">
-                  <h3>SEO</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar color-6"
-                      role="progressbar"
-                      aria-valuenow={80}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                      style={{ width: "80%" }}
-                    >
-                      <span>80%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {skillsItems}
             </div>
           </div>
         </section>
