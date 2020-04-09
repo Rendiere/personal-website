@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 export default class Sidebar extends Component {
   render() {
@@ -31,6 +32,7 @@ export default class Sidebar extends Component {
               <a href="#">Data Scientist</a>
             </span>
           </div>
+          {/* Items list */}
           <nav id="colorlib-main-menu" role="navigation" className="navbar">
             <div id="navbar" className="collapse">
               <ul>
@@ -56,7 +58,7 @@ export default class Sidebar extends Component {
                 </li>
                 <li>
                   <a
-                    href="#experience"
+                    href="experience"
                     data-nav-section="experience"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -83,10 +85,12 @@ export default class Sidebar extends Component {
                   >
                     Contact
                   </a>
+                  {/* <SidebarNavItem to="#contact" name="contact" /> */}
                 </li>
               </ul>
             </div>
           </nav>
+          {/*  Items list */}
           <div className="colorlib-footer">
             <p>
               <small>
@@ -114,4 +118,19 @@ export default class Sidebar extends Component {
       </div>
     );
   }
+}
+
+function SidebarNavItem(props) {
+  return (
+    <li data-nav-section="contact">
+      <NavLink
+        to={props.to}
+        className="nav-item"
+        exact={props.exact ? true : false}
+        activeClassName="active"
+      >
+        {props.name}
+      </NavLink>
+    </li>
+  );
 }

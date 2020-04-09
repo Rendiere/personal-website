@@ -3,25 +3,32 @@ import "./App.css";
 import Sidebar from "./components/sidebar/sidebar";
 import Home from "./components/home/home";
 import About from "./components/about/about";
-import Experience from "./components/experience/experience";
 import Contact from "./components/contact/contact";
-import Blog from "./components/blog/blog";
+import RecentBlog from "./components/blog/recent-blog";
+import Exprience from "./components/experience/experience";
+
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <div id="colorlib-page">
-        <div id="container-wrap">
-          <Sidebar></Sidebar>
-          <div id="colorlib-main">
-            <Home></Home>
-            <About></About>
-            {/* <Experience></Experience> */}
-            <Blog></Blog>
-            <Contact></Contact>
+      <BrowserRouter>
+        <div id="colorlib-page">
+          <div id="container-wrap">
+            <Sidebar></Sidebar>
+            <Switch>
+              <div id="colorlib-main">
+                <Route path="/" exact component={Home}></Route>
+                <Route path="/" exact component={About}></Route>
+                <Route path="/" exact component={Exprience} />
+                <Route path="/" exact component={RecentBlog} />
+                <Route path="/" exact component={Contact}></Route>
+                {/* <Route path="/blog" component={Blog}></Route> */}
+              </div>
+            </Switch>
           </div>
         </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }

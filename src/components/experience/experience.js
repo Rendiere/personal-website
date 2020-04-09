@@ -1,90 +1,10 @@
 import React, { Component } from "react";
 import Skills from "./skills";
 import ExperienceSection from "./section";
+import experience_data from './experience_data.js'
 
 export default class Experience extends Component {
   render() {
-    const experience_data = [
-      {
-        title: "Data Science Consultant",
-        dates: {
-          start: "Jan. 2020",
-          end: "March 2020"
-        },
-        company: "FastComm",
-        city: "Cape Town",
-        description: `Using statistical analysis (regression and hypothesis testing) and
-        machine learning, I built multiple data products to showcase the
-        value of existing raw datasets collected by FastComm.
-        <br>
-        My role as consultant was project based. The outcome was deemed a
-        success and the core components were put into production.`
-      },
-      {
-        title: "Data Scientist",
-        dates: {
-          start: "Feb. 2019",
-          end: "Aug. 2019"
-        },
-        company: "JUMO",
-        company_link: "www.jumo.world",
-        city: "Cape Town",
-        description: `Using statistical analysis (regression and hypothesis testing) and
-        machine learning, I built multiple data products to showcase the
-        value of existing raw datasets collected by FastComm.
-        <br>
-        My role as consultant was project based. The outcome was deemed a
-        success and the core components were put into production.`
-      },
-      {
-        title: "Data Scientist",
-        dates: {
-          start: "Sept. 2018",
-          end: "Dec. 2018"
-        },
-        company: "Jungle.ai",
-        company_link: "www.jungle.ai",
-        city: "Lisbon",
-        description: `Using statistical analysis (regression and hypothesis testing) and
-        machine learning, I built multiple data products to showcase the
-        value of existing raw datasets collected by FastComm.
-        <br>
-        My role as consultant was project based. The outcome was deemed a
-        success and the core components were put into production.`
-      },
-      {
-        title: "Data Scientist",
-        dates: {
-          start: "Dec. 2017",
-          end: "July 2018"
-        },
-        company: "Black Swan",
-        company_link: "www.blackswan.com",
-        city: "Cape Town",
-        description: `Using statistical analysis (regression and hypothesis testing) and
-        machine learning, I built multiple data products to showcase the
-        value of existing raw datasets collected by FastComm.
-        <br>
-        My role as consultant was project based. The outcome was deemed a
-        success and the core components were put into production.`
-      },
-      {
-        title: "Software Engineer",
-        dates: {
-          start: "Dec. 2016",
-          end: "Nov. 2017"
-        },
-        company: "Black Swan",
-        company_link: "www.blackswan.com",
-        city: "Cape Town",
-        description: `Using statistical analysis (regression and hypothesis testing) and
-        machine learning, I built multiple data products to showcase the
-        value of existing raw datasets collected by FastComm.
-        <br>
-        My role as consultant was project based. The outcome was deemed a
-        success and the core components were put into production.`
-      }
-    ];
 
     const work_experience = Object.entries(experience_data).map(
       (value, index) => {
