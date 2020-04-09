@@ -9,13 +9,13 @@ export default class PostCard extends Component {
   render() {
     return (
       <div className="blog-entry">
-        <NavLink to={this.props.to} className="blog-img">
+        <a href={this.props.to} className="blog-img">
           <img
             src="images/img_bg_3.jpg"
             className="img-responsive"
             alt="post image"
           />
-        </NavLink>
+        </a>
 
         <div className="desc">
           <span>

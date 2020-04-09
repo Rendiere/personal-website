@@ -29,7 +29,7 @@ export default class About extends Component {
                         <br />I enjoy keeping things balanced, which for me
                         means yoga and{" "}
                         <a
-                          href="https://soundcloud.com/renthefox"
+                          href="https://soundcloud.com/renthefox/tracks"
                           target="_blank"
                         >
                           DJing

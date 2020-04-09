@@ -17,7 +17,7 @@ export default class RecentBlog extends Component {
                 <h2 className="colorlib-heading">Recent Posts</h2>
               </div>
             </div>
-
+            {/* Three most recent posts */}
             <div className="row">
               <div
                 className="col-md-4 col-sm-6 animate-box"
@@ -30,12 +30,13 @@ export default class RecentBlog extends Component {
                 ></PostCard>
               </div>
             </div>
+            {/* Link to blog */}
             <div className="row">
               <div className="col-md-4"></div>
               <div className="col-md-4 animate-box">
                 <p>
                   <a href="#" className="btn btn-primary btn-lg btn-load-more">
-                    Load more <i className="icon-reload" />
+                    Visit <i className="icon-reload" />
                   </a>
                 </p>
               </div>

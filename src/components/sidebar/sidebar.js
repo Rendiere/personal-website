@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 
 export default class Sidebar extends Component {
   render() {
@@ -85,14 +84,19 @@ export default class Sidebar extends Component {
                   >
                     Contact
                   </a>
-                  {/* <SidebarNavItem to="#contact" name="contact" /> */}
                 </li>
               </ul>
             </div>
           </nav>
-          {/*  Items list */}
-          <div className="colorlib-footer">
-            <p>
+          <nav id="colorlib-main-menu">
+              <ul>
+                <li><a href="https://twitter.com/ren_snavs" target="_blank" rel="noopener noreferrer"><i className="icon-twitter2" /></a></li>
+                <li><a href="https://www.linkedin.com/in/ren-botha/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
+                <li><a href="https://github.com/Rendiere" target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
+              </ul>
+          </nav>
+          <div className="colorlib-footer" style={{ height: "100%" }}>
+            <p className="align-text-bottom">
               <small>
                 Made with <i className="icon-heart" aria-hidden="true" />. Based
                 on template by{" "}
@@ -101,36 +105,9 @@ export default class Sidebar extends Component {
                 </a>
               </small>
             </p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i className="icon-github" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="icon-linkedin2" />
-                </a>
-              </li>
-            </ul>
           </div>
         </aside>
       </div>
     );
   }
-}
-
-function SidebarNavItem(props) {
-  return (
-    <li data-nav-section="contact">
-      <NavLink
-        to={props.to}
-        className="nav-item"
-        exact={props.exact ? true : false}
-        activeClassName="active"
-      >
-        {props.name}
-      </NavLink>
-    </li>
-  );
 }

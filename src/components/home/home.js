@@ -43,7 +43,8 @@ export default class Home extends Component {
                         <div className="desc">
                           <h1>Blog</h1>
                           <h2>
-                            I write about <span>statistics</span>,{" "}
+                            I like to write about what I'm learning, which is
+                            mostly <span>statistics</span>,{" "}
                             <span>programming</span> and{" "}
                             <span>machine learning</span>.
                           </h2>
@@ -70,10 +71,9 @@ export default class Home extends Component {
                     <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                       <div className="slider-text-inner">
                         <div className="desc">
-                          <h1>Resumé</h1>
+                          <h1>Résumé</h1>
                           <h2>
-                            You can view my education and work experience here,
-                            or download a PDF
+                            Scroll down to see my work experience, or download my résumé as a PDF.
                           </h2>
                           <p>
                             <a
