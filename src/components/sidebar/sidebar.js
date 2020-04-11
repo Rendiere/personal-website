@@ -65,7 +65,7 @@ export default class Sidebar extends Component {
                     Experience
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="#blog"
                     data-nav-section="blog"
@@ -74,7 +74,7 @@ export default class Sidebar extends Component {
                   >
                     Blog
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="#contact"

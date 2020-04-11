@@ -5,6 +5,7 @@ import Home from "./components/home/home";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import RecentBlog from "./components/blog/recent-blog";
+import Experience from "./components/experience/experience";
 
 class App extends Component {
   render() {
@@ -15,7 +16,8 @@ class App extends Component {
           <div id="colorlib-main">
             <Home />
             <About />
-            <RecentBlog />
+            {/* <RecentBlog /> */}
+            <Experience></Experience>
             <Contact />
           </div>
         </div>
