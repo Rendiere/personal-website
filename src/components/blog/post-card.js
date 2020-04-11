@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Markdown from "react-markdown";
-import { NavLink } from "react-router-dom";
 
 export default class PostCard extends Component {
   constructor(props, context) {
