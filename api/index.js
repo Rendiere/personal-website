@@ -1,28 +1,34 @@
 const cors = require("cors");
+const express = require("express");
 const bodyParser = require("body-parser");
-
 const sgMail = require("@sendgrid/mail");
+
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-const express = require("express");
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get("/", (req, res) => {
-  console.log("GET /");
-  let msg = "Please go away. Nothing to see here...";
+  let msg = "Nothing to see here...";
   res.status(200).send(msg).end();
 });
 
-app.post("/mail", (req, res) => {
-  console.log("POST /mail");
+app.get("/api", (req, res) => {
+  res.status(200).send("Seriously, nothing to see here...");
+});
+
+app.get("/api/mail", (req, res) => {
+  res.status(200).send("Please go away.");
+});
+
+app.post("/api/mail", (req, res) => {
   var data = req.body;
 
-  console.log("Received Request");
-  console.log("Data:");
-  console.log(data);
+  // console.log("Received Request");
+  // console.log("Data:");
+  // console.log(data);
 
   const msgToMe = {
     to: "r.botha91@gmail.com",
@@ -36,7 +42,7 @@ app.post("/mail", (req, res) => {
     <p>${data.message}</p>`,
   };
 
-  console.log("Sending mail to me...");
+  // console.log("Sending mail to me...");
 
   // Send the message to me
   sgMail.send(msgToMe, (err, info) => {
@@ -46,7 +52,7 @@ app.post("/mail", (req, res) => {
       console.log(error.response.body);
       res.send(error);
     } else {
-      console.log("Successfully sent mail from " + data.email);
+      // console.log("Successfully sent mail from " + data.email);/
       res.send("Success");
     }
   });
@@ -77,9 +83,9 @@ app.post("/mail", (req, res) => {
     `,
   };
 
-  console.log(`Sending confirmation mail to ${data.email}...`);
+  // console.log(`Sending confirmation mail to ${data.email}...`);
   sgMail.send(msgToThem);
-  console.log("Sent!");
+  // console.log("Sent!");
 });
 
 const PORT = process.env.PORT || 8080;
