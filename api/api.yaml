@@ -1,0 +1,4 @@
+runtime: nodejs10
+service: api
+env_variables:
+    SENDGRID_API_KEY: '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'
