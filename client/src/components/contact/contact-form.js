@@ -38,10 +38,10 @@ export default class ContactForm extends Component {
       subject: this.state.subject,
     };
 
-    console.log(`Mail API URL: ${API_URL}`);
+    console.log(`Mail API URL: ${API_URL}/mail`);
 
     axios
-      .post(`${API_URL}`, data)
+      .post(`${API_URL}/mail`, data)
       .then((res) => {
         console.log("Respone: ", res);
         this.setState({ send: true }, this.resetForm());
