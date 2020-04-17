@@ -1,14 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-const PORT = 5000;
-// const REGION_ID='ue';
-// const VERSION_ID='20200415t150236';
-// const SERVICE_ID='email-api'
-// const PROJECT_ID = 'personal-website-274005'
-// const API_URL = `https://${VERSION_ID}-dot-${SERVICE_ID}-dot-${PROJECT_ID}.${REGION_ID}.r.appspot.com`;
+const API_URL = "/api";
 
-const API_URL = "https://mail-api-git-dev.renbotha.now.sh/";
 
 export default class ContactForm extends Component {
   state = {
@@ -44,10 +38,10 @@ export default class ContactForm extends Component {
       subject: this.state.subject,
     };
 
-    console.log(`${API_URL}:${PORT}/mail`)
+    console.log(`Mail API URL: ${API_URL}`);
 
     axios
-      .post(`${API_URL}:${PORT}/mail`, data)
+      .post(`${API_URL}`, data)
       .then((res) => {
         console.log("Respone: ", res);
         this.setState({ send: true }, this.resetForm());
