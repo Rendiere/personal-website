@@ -25,5 +25,6 @@ yarn-error.log*
 # Client
 
 # API
-/api/sendgrid.env
-*.env
+api/env_variables.yaml
+
+

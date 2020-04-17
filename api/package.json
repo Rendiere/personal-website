@@ -4,9 +4,7 @@
   "description": "An API for handling emails on submitting the contact form on my personal site",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build",
-    "serve": "npm serve",
-    "start": "npm run build && node index.js"
+    "start": "node index.js"
   },
   "author": "Renier Botha",
   "license": "ISC",
