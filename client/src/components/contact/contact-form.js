@@ -6,11 +6,10 @@ const API_URL = "/api";
 
 export default class ContactForm extends Component {
   state = {
-    name: "Piet Pompies",
-    message:
-      "Hey Renier, saw your website and wanted to get in contact. Give me a call on 0842001899.",
-    email: "r.botha91@gmail.com",
-    subject: "Getting in contact",
+    name: "",
+    message:"",
+    email: "",
+    subject: "",
     sent: false,
     buttonText: "Send Message",
   };
