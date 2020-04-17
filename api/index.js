@@ -11,11 +11,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get("/", (req, res) => {
+  console.log("GET /");
   let msg = "Please go away. Nothing to see here...";
   res.status(200).send(msg).end();
 });
 
 app.post("/mail", (req, res) => {
+  console.log("POST /mail");
   var data = req.body;
 
   console.log("Received Request");
@@ -80,7 +82,7 @@ app.post("/mail", (req, res) => {
   console.log("Sent!");
 });
 
-const PORT = 5000
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`We are live on PORT ${PORT}`);
+  console.log(`Server listening on port ${PORT}...`);
 });
