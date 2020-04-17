@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 export default class About extends Component {
   render() {
@@ -96,14 +98,16 @@ export default class About extends Component {
                         If you're reading this, then I've recently completed a
                         project and I'm available again.
                       </h2>
-                      <a
+                      {/* <a
                         href="#contact"
                         data-nav-section="contact"
                         rel="noopener noreferrer"
                         className="btn-hire"
                       >
                         Hire me
-                      </a>
+                      </a> */}
+                      <Link to='contact' className='btn btn-hire' smooth={true}>Hire Me</Link>
+                      
                     </div>
                   </div>
                 </div>
