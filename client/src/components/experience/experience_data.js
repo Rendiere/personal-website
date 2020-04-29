@@ -9,7 +9,7 @@ const experience_data = [
     city: "Cape Town",
     actionItems: [
       "Built multiple data products to showcase the value of existing raw datasets.",
-      "Developed machine learning model capable of reducing sensor costs by up to $200.",
+      "Developed a machine learning model capable of reducing sensor costs by up to $200.",
       "Delivered a presentation pitched by FastComm to new client.",
     ],
   },
@@ -24,8 +24,8 @@ const experience_data = [
     city: "Cape Town",
     actionItems: [
       "Improved the affordability inference model by approx. 10% using feature engineering techniques.",
-      "Collaborated with Finance and B.I teams to develop a disbursment forecasting model with MAPE < 6%.",
-      "Redesigned Data Science application assignment to be interactive to applicants and easier to mark for the team. This made it possible to process upwards of 20 applications per week. ",
+      "Collaborated with the Finance and B.I teams to develop a disbursment forecasting model with MAPE < 6%.",
+      "Redesigned Data Science interview assignment to be interactive to applicants and easier to mark for the team. This made it possible to process upwards of 20 applications per week. ",
     ],
   },
   {
@@ -38,7 +38,7 @@ const experience_data = [
     company_link: "www.jungle.ai",
     city: "Lisbon",
     actionItems: [
-      "Worked in a team of data scientist lazer focused on finding ways to detect failures in wind turbines from massive multi-variate time series datasets.",
+      "Worked in a team of data scientists lazer-focused on finding ways to detect failures in wind turbines from massive multi-variate time series datasets.",
       "Investigated data from an offshore wind farm to detect power transformer failures, and reported findings to client engineering and innovation teams.",
     ],
   },
@@ -53,7 +53,7 @@ const experience_data = [
     city: "Cape Town",
     actionItems: [
       "Championed and deployed an internal knowledge sharing platformed using AirBnB's knowledge repo.",
-      "Developer a forecasting framework allowing new methods to be rapidly benchmarked.",
+      "Developed a forecasting framework allowing new methods to be rapidly benchmarked.",
       "Documented and unit-tested existing code bases.",
     ],
   },
@@ -67,8 +67,8 @@ const experience_data = [
     company_link: "www.blackswan.com",
     city: "Cape Town",
     actionItems: [
-      "Developed web-apps using mainly Angular.",
-      "Built data visualizations using D3.js for interactive platforms and reporting.",
+      "Developed Angular & Material UI web-apps for clients and internal projects.",
+      "Built custom data visualizations using D3.js for interactive platforms and reporting.",
     ],
   },
 ];
