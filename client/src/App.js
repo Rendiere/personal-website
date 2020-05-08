@@ -4,7 +4,7 @@ import Sidebar from "./components/sidebar/sidebar";
 import Home from "./components/home/home";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
-import RecentBlog from "./components/blog/recent-blog";
+// import RecentBlog from "./components/blog/recent-blog";
 import Experience from "./components/experience/experience";
 
 class App extends Component {

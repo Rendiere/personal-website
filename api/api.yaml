@@ -1,0 +1,5 @@
+runtime: nodejs10
+service: api
+env: standard
+includes:
+    - env_variables.yaml

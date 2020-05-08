@@ -98,8 +98,8 @@ export default class Sidebar extends Component {
           <div className="colorlib-footer" style={{ height: "100%" }}>
             <p className="align-text-bottom">
               <small>
-                Made with <i className="icon-heart" aria-hidden="true" />. Based
-                on template by{" "}
+                Made with <i className="icon-heart" aria-hidden="true" /> and React. Based
+                on an HTML template by{" "}
                 <a href="https://colorlib.com" target="_blank">
                   Colorlib
                 </a>

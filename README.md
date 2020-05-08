@@ -1,13 +1,9 @@
-# My personal website
+# Personal Website
 
-This project was based on [this template](https://colorlib.com/preview/#jackson) and inspired by [this blog post](https://www.freecodecamp.org/news/portfolio-app-using-react-618814e35843/)
+This repo contains the code for my personal website: [www.rbotha.co.za](www.rbotha.co.za)
 
-### TODO List
+It consists of :
+1. A React front-end: `/client` 
+2. A Node API to handle contact form submissions: `/api`
 
-[] Add blog section
-* Update skills
-* Update work experience with company and city
-* Render HTML in work experience description
-* Update font in header
-* Update icons in about section
-* Hook up email to "Hire Me"
+For details on each component and deploying these services to Google Cloud, follow the steps within each folder.

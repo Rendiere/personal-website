@@ -1288,7 +1288,9 @@ body.offcanvas {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0; 
+  resize: None;
+}
   .form-control:active, .form-control:focus {
     outline: none;
     -webkit-box-shadow: none;
