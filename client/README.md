@@ -13,3 +13,5 @@ gcloud app deploy client.yaml
 ```
 
 Which creates the `default` service on a Google App Engine project. 
+
+**Important**: Be sure to run `npm run build` before deploying. This creates a `build` folder in this directory, which is what is being served in production. If that doesn't exist, or is not updated, the live website will not reflect changes locally. 
