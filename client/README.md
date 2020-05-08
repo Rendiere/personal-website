@@ -1,13 +1,15 @@
 # My personal website
 
-This project was based on [this template](https://colorlib.com/preview/#jackson) and inspired by [this blog post](https://www.freecodecamp.org/news/portfolio-app-using-react-618814e35843/)
+This contains the front-end for my personal website - [www.rbotha.co.za](www.rbotha.co.za).
 
-### TODO List
+The site is basically the components of [this template](https://colorlib.com/preview/#jackson) converted to React and adding a few things. I was inspired by [this blog post](https://www.freecodecamp.org/news/portfolio-app-using-react-618814e35843/)
 
-[] Add blog section
-* Update skills
-* Update work experience with company and city
-* Render HTML in work experience description
-* Update font in header
-* Update icons in about section
-* Hook up email to "Hire Me"
+
+## Deploying
+
+This app can be deployed to Google Cloud App Engine by running
+```
+gcloud app deploy client.yaml
+```
+
+Which creates the `default` service on a Google App Engine project. 

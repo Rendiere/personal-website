@@ -1,4 +1,0 @@
-# Place the keys you want to include in api.yaml here
-# and rename the file to env_variables.yaml
-env_variables:
-    SENDGRID_API_KEY: PAST_KEY

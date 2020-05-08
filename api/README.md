@@ -13,8 +13,27 @@ When a contact form on my website gets submitted, this API does two things:
 
 ## Deploying to Google Cloud
 
-Before deploying, add the Sendgrid Web Service API key to `app.yaml`. Then, simply run:
+Before deploying, create a file called `env_variables.yaml` within this directory, and add the Sendgrid API as follows:
 
+```yaml
+# api/env_variables.yaml
+env_variables:
+    SENDGRID_API_KEY: 'YOUR API KEY'
 ```
-gcloud app deploy
+
+Then, simply run:
+
+```bash
+gcloud app deploy api.yaml
 ```
+
+This should create a new service called `api` on your Google App Engine project. 
+
+**Important**: For this api and the front-end client to communicate, it is necessary to dispath calls to the api under the route `/api`. 
+
+To do this, run :
+```
+gcloud app deploy dispatch.yaml
+``` 
+
+In the root directory of this repo. 
